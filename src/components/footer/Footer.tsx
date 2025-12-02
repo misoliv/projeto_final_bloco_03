@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         
-        <div className="flex justify-center w-full px-2 text-gray-900 bg-cyan-200 py-4 mt-auto">
+        <div className="flex justify-center w-full px-2 text-white bg-cyan-400 py-4 mt-auto">
             <div className="container flex flex-col items-center gap-2">
                 <p className='text-base font-bold text-center md:text-xl'>Farmacia Milena Svitras | Copyright: {data}</p>
                 <p className='text-sm text-center md:text-lg'>Acesse nossas redes sociais</p>
