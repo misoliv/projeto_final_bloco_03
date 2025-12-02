@@ -6,6 +6,9 @@ import DeletarCategoria from "./components/categorias/deletarcategoria/DeletarCa
 import FormCategoria from "./components/categorias/formcategoria/FormCategoria"
 import ListarCategorias from "./components/categorias/listacategorias/ListarCategorias"
 import { useState } from "react"
+import DeletarProduto from "./components/produtos/deletarproduto/DeletarProduto"
+import FormProduto from "./components/produtos/formproduto/FormProduto"
+import ListarProdutos from "./components/produtos/listarprodutos/ListarProdutos"
 
 type MenuState = 'closed' | 'open'
 
@@ -40,6 +43,10 @@ function App() {
               <Route path="/cadcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />
               <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
+              <Route path="/produtos" element={<ListarProdutos />} />
+              <Route path="/cadproduto" element={<FormProduto />} />
+              <Route path="/editarproduto/:id" element={<FormProduto />} />
+              <Route path="/deletarproduto/:id" element={<DeletarProduto />} />
             </Routes>
           </div>
         

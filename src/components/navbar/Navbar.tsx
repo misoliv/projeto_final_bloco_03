@@ -60,7 +60,7 @@ function Navbar({ menuState, onMenuToggle, onMenuClose }: Readonly<NavbarProps>)
     return (
         <>
             {/* Navbar fixa no topo, visível em todas as telas */}
-            <div className='fixed top-0 left-0 z-50 flex justify-center w-full py-4 text-white bg-cyan-400 md:py-2'>
+            <div className='fixed top-0 left-0 z-50 flex justify-center w-full py-2 text-white bg-cyan-400 md:py-2'>
                 <div className="container flex items-center justify-between mx-6 mt-2 text-lg">
                     {/* Logo da Farmacia, sempre visível, redireciona para Home */}
                     <Link to='/home'>
@@ -78,6 +78,7 @@ function Navbar({ menuState, onMenuToggle, onMenuClose }: Readonly<NavbarProps>)
 
                     {/* Menu de navegação desktop/tablet */}
                     <div className='items-center hidden gap-4 py-4 md:flex'>
+                        <Link to='/produtos' className='hover:underline'>Produtos</Link>
                         <Link to='/categorias' className='hover:underline'>Categorias</Link>
                         <Link to='/cadcategoria' className='hover:underline'>Cadastrar Categoria</Link>
                         <UserIcon size={32} weight='bold' />
@@ -126,6 +127,23 @@ function Navbar({ menuState, onMenuToggle, onMenuClose }: Readonly<NavbarProps>)
                         {/* Links de navegação mobile */}
                         <Link to='/home' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
                             Home
+                        </Link>
+                        <Link to='/categorias' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
+                            Categorias
+                        </Link>
+                        <Link to='/cadcategoria' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
+                            Cadastrar Categoria
+                        </Link>
+
+                        {/* Links de navegação mobile */}
+                        <Link to='/home' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
+                            Home
+                        </Link>
+                        <Link to='/produtos' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
+                            Produtos
+                        </Link>
+                        <Link to='/cadproduto' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
+                            Cadastrar Produto
                         </Link>
                         <Link to='/categorias' onClick={handleMenuClose} className="py-2 text-white hover:text-gray-300">
                             Categorias
