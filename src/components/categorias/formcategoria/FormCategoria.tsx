@@ -77,13 +77,13 @@ function FormCategoria() {
   }
 
   return (
-    <div className="container flex flex-col items-center justify-center px-2 pt-4 mx-auto">
+    <div className="container flex flex-col items-center justify-center px-2 pt-4 mx-auto mt-15">
       <h1 className="my-8 text-3xl text-center md:text-4xl">
         {id === undefined ? "Cadastrar Categoria" : "Editar Categoria"}
       </h1>
 
       <form
-        className="flex flex-col w-full max-w-md gap-4 px-2 md:max-w-1/2"
+        className="flex flex-col w-full max-w-md gap-4 px-2 md:max-w-1/2 mt-6"
         onSubmit={gerarNovaCategoria}
       >
         <div className="flex flex-col gap-2">
@@ -101,7 +101,7 @@ function FormCategoria() {
         </div>
 
         <button
-          className="flex justify-center w-full py-2 mx-auto text-base rounded text-slate-100 bg-slate-400 hover:bg-slate-800 md:w-1/2 md:text-lg"
+          className="flex justify-center w-full py-2 mx-auto text-base rounded text-slate-100 bg-slate-400 hover:bg-cyan-500 md:w-1/2 md:text-lg"
           type="submit"
         >
           {isLoading ? (

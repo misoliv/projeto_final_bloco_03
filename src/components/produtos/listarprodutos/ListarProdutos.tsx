@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { PacmanLoader } from 'react-spinners'
+import { BarLoader } from 'react-spinners'
 import { listar } from '../../../services/Service'
 import CardProdutos from '../cardprodutos/CardProdutos'
 import type Produto from '../../../models/Produto'
@@ -27,14 +27,15 @@ function ListarProdutos() {
 	return (
 		<>
 			{isLoading && (
-				<PacmanLoader
+				<div className="flex justify-center items-center min-h-[calc(100vh-8rem)] w-full overflow-x-hidden">
+				<BarLoader
 					color="#0D9488"
-					margin={0}
-					size={80}
-					speedMultiplier={2}
-					aria-label="Pacman-loading"
-					className="mx-auto my-28"
+					width={200}
+					height={12}
+					speedMultiplier={1.5}
+					aria-label="bar-loader"
 				/>
+				</div>
 			)}
 			<div className="flex justify-center mt-4 md:mt-6">
 				<div className="container flex flex-col m-2 md:my-0">
@@ -44,7 +45,7 @@ function ListarProdutos() {
 						</span>
 					)}
 
-					<div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 mb-4 md:mb-0 p-2 md:p-4">
+					<div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 mb-4 md:mb-0 p-2 md:p-4 m-15">
 						{produtos.map((produto) => (
 							<CardProdutos
 								key={produto.id}

@@ -60,7 +60,7 @@ function Navbar({ menuState, onMenuToggle, onMenuClose }: Readonly<NavbarProps>)
     return (
         <>
             {/* Navbar fixa no topo, visível em todas as telas */}
-            <div className='fixed top-0 left-0 z-50 flex justify-center w-full py-2 text-white bg-cyan-400 md:py-2'>
+            <div className='fixed top-0 left-0 z-50 flex justify-center w-full py-2 text-white bg-cyan-500 md:py-2'>
                 <div className="container flex items-center justify-between mx-6 mt-2 text-lg">
                     {/* Logo da Farmacia, sempre visível, redireciona para Home */}
                     <Link to='/home'>

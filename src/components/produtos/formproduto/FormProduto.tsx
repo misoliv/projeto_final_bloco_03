@@ -192,7 +192,7 @@ function FormProduto() {
 				</div>
 
 				<button
-					className="rounded text-slate-100 bg-slate-400 hover:bg-slate-800 
+					className="rounded text-slate-100 bg-slate-400 hover:bg-cyan-500 
 								w-full py-2 mt-2 flex justify-center items-center text-base transition-colors"
 					type="submit"
 					disabled={isLoading}

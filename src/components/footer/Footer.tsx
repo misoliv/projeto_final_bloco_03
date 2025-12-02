@@ -6,19 +6,19 @@ function Footer() {
 
     return (
         
-        <div className="flex justify-center w-full px-2 text-white bg-cyan-400 py-4 mt-auto">
+        <div className="flex justify-center w-full px-2 text-white bg-cyan-500 py-10 mt-auto">
             <div className="container flex flex-col items-center gap-2">
-                <p className='text-base font-bold text-center md:text-xl'>Farmacia Milena Svitras | Copyright: {data}</p>
+                <p className='text-base font-bold text-center md:text-xl'>Farmácia |  Copyright: {data}</p>
                 <p className='text-sm text-center md:text-lg'>Acesse nossas redes sociais</p>
                 <div className='flex flex-wrap justify-center gap-2'>
                     <a href="#" target="_blank" className="flex items-center" rel="noopener noreferrer">
                         <span className="flex items-center justify-center w-10 h-10">
-                            <LinkedinLogoIcon size={28} weight='bold' />
+                            <LinkedinLogoIcon size={30} weight='bold' />
                         </span>
                     </a>
                     <a href="#" target="_blank" className="flex items-center" rel="noopener noreferrer">
                         <span className="flex items-center justify-center w-10 h-10">
-                            <InstagramLogoIcon size={28} weight='bold' />
+                            <InstagramLogoIcon size={30} weight='bold' />
                         </span>
                     </a>
                 </div>
